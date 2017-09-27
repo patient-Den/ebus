@@ -1,0 +1,25 @@
+.footer{
+	&__contacts{
+		margin-top: 45px;
+		background: #3b6ba5;
+		color: #fff;
+		font-size: 20px;
+		padding: 20px 0;
+		text-align: center;
+		a{
+			color: #fff;
+		}
+		b{
+			font-size: 24px;
+		}
+		.address{
+			margin: 0 30px;
+			display: inline-block;
+		}
+		.mail{
+			margin: 0 30px;
+			display: inline-block;
+		}
+	}
+}
+// @include breakpoint
