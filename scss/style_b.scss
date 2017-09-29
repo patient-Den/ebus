@@ -1,0 +1,434 @@
+@import "_mixins";
+@import '_grid';
+@import '_reset';
+
+
+//=========================   SLIDER  ===================================//
+.slider-wrap{
+	padding: 0 40px;
+	position: relative;
+}
+
+
+.slider__bus{
+//	position: relative;
+	.subTitle{
+		margin: 40px 0;
+	}
+	.itemSlider{
+	background-color: #f4f4f4;
+	max-width: 360px;
+		float: left;
+		
+		p{
+			font-size: 15px;
+			text-transform: none;
+			color: #6b6b6b;
+			font-weight: 200;
+		}
+		.itemSlider__img{
+			img{
+				height: 250px;
+			}
+		}
+	}
+	.complect {
+		padding: 10px;
+		span{
+			font-size: 18px;
+			display: inline;
+			text-transform: none;
+		}
+		
+	}
+	.car{
+		span{
+			font-size: 18px;
+			display: inline;
+			text-transform: none;
+		}
+		
+		padding: 10px;
+	}
+	.price{
+		padding: 10px;
+		p{
+			font-size: 22px;
+			text-transform: none;
+			font-weight: 400;
+		}
+	}
+	span{
+	text-transform: uppercase;
+	color: #6b6b6b;
+	font-size: 30px;
+	display: block;
+	text-align: center;
+	font-weight: normal;
+	}
+}
+
+.title{
+	text-transform: uppercase;
+	color: #6b6b6b;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	
+}
+
+
+
+.slidePrev{
+	cursor: pointer;
+	position: absolute;
+	top: 200px;
+	left: 0px;
+	height: 50px;
+	width: 30px;
+	
+	&:after{
+		content: '';
+		display: block;
+		width: 5px;
+		height: 30px;
+		background-color: #3b6ba5;
+		transform: rotate(-45deg);
+		position: relative;
+		top: -12px;
+		left: 10px;
+		border-radius: 2px;
+		transition: 0.2s;
+	}
+	&:before{
+		content: '';
+		display: block;
+		width: 5px;
+		height: 30px;
+		background-color: #3b6ba5;
+		transform: rotate(45deg);
+		left: 10px;
+		position: relative;
+		border-radius: 2px;
+		transition: 0.2s;
+	}
+	&:hover{
+		&:before{
+			height: 32px;
+		}
+		&:after{
+			height: 32px;
+		}
+	}
+}
+
+.slideNext{
+	position: absolute;
+	height: 50px;
+	width: 30px;
+	top: 200px;
+	right: -5px;
+	cursor: pointer;
+	&:before{
+		content: '';
+		display: block;
+		width: 5px;
+		height: 30px;
+		background-color: #3b6ba5;
+		transform: rotate(-45deg);
+		position: relative;
+		left: 10px;
+		border-radius: 2px;
+		transition: 0.2s;
+	}
+	&:after{
+		content: '';
+		display: block;
+		width: 5px;
+		height: 30px;
+		background-color: #3b6ba5;
+		transform: rotate(45deg);
+		position: relative;
+		top: -12px;
+		left: 10px;
+		border-radius: 2px;
+		transition: 0.2s;
+	}
+	&:hover{
+		&:before{
+			height: 32px;
+		}
+		&:after{
+			height: 32px;
+			
+		}
+	}
+}
+//=========================   SLIDER END  ===================================//
+
+
+//=========================   ACTION  ===================================//
+
+.action-wrap{
+	width: 100%;
+	height: 890px;
+	background-image: url(../images/action-bg.png);
+	background-repeat: no-repeat;
+	background-position:left;
+	.action{
+		float: right;
+		margin-top: 280px;
+		background-color: rgba(255, 255, 255, 0.75);
+		
+		&__title{
+			font-size: 50px;
+			color: #fd9604;
+			margin-bottom: 68px;
+			font-weight: bold;
+		}
+		&__text{
+			font-size: 45px;
+			color: #6b6b6b;
+			font-weight: bold;
+		}
+		&__timer{
+			margin-top: 40px;
+		}
+		span{
+			font-weight: 300;
+		}
+	}
+	
+}
+.action__timerMob{
+	margin-top: 40px;
+}
+#TextBox_jbeeb_688{
+	top:-30px!important;
+}
+#TextBox_jbeeb_260{
+	top:-30px!important;
+}
+#TextBox_jbeeb_345{
+	top:-30px!important;
+}
+#TextBox_jbeeb_90{
+	top:-30px!important;
+}
+#TextBox_jbeeb_347{
+	top:-30px!important;
+}#TextBox_jbeeb_262{
+	top:-30px!important;
+}
+#TextBox_jbeeb_177{
+	top:-30px!important;
+}
+#TextBox_jbeeb_92{
+	top:-30px!important;
+}
+#TextBox_jbeeb_603{
+	top:-30px!important;
+}
+#TextBox_jbeeb_518{
+	top:-30px!important;
+}
+#TextBox_jbeeb_433{
+	top:-30px!important;
+}
+//=========================   ACTION AND ===================================//
+
+//=========================   REVIEWS  ===================================//
+.revievWrap{
+
+    margin: 0 auto;
+	padding: 0 40px;
+	margin-top: 40px;
+}
+.reviews{
+
+	
+	&__foto{
+		min-width: 130px!important;
+		height: 140px!important;
+		background-color: #c0c4c8;
+		border-radius: 50%;
+		overflow: hidden;
+		position: relative;
+
+	}
+	.reviewsSlider{
+		    padding-bottom: 212px !important;
+	}
+	&__text{
+		background-color: #3b6ba5;
+		padding: 45px 100px;
+		color: #fff;
+		margin-top: 0px;
+		position: absolute;
+		opacity: 0;
+		width: 100%;
+		&.active{
+			opacity: 1;
+		}
+		.userName{
+			margin-bottom: 48px;
+			p{
+				font-size: 18px;
+			}
+			span{
+				font-size: 25px;
+				font-weight: bold;
+			}
+		}
+	}
+	.RevSlidePrev{
+		cursor: pointer;
+		position: absolute;
+		top: 130px;
+		left: 0px;
+		height: 50px;
+		width: 30px;
+		
+		&:after{
+			content: '';
+			display: block;
+			width: 5px;
+			height: 30px;
+			background-color: #3b6ba5;
+			transform: rotate(-45deg);
+			position: relative;
+			top: -12px;
+			left: 10px;
+			border-radius: 2px;
+			transition: 0.2s;
+		}
+		&:before{
+			content: '';
+			display: block;
+			width: 5px;
+			height: 30px;
+			background-color: #3b6ba5;
+			transform: rotate(45deg);
+			left: 10px;
+			position: relative;
+			border-radius: 2px;
+			transition: 0.2s;
+		}
+		&:hover{
+			&:before{
+				height: 32px;
+			}
+			&:after{
+				height: 32px;
+			}
+		}
+
+	}
+
+	.RevSlideNext{
+		position: absolute;
+		height: 50px;
+		width: 30px;
+		top: 130px;
+		right: 0px;
+		cursor: pointer;
+		&:before{
+			content: '';
+			display: block;
+			width: 5px;
+			height: 30px;
+			background-color: #3b6ba5;
+			transform: rotate(-45deg);
+			position: relative;
+			left: 10px;
+			border-radius: 2px;
+			transition: 0.2s;
+		}
+		&:after{
+			content: '';
+			display: block;
+			width: 5px;
+			height: 30px;
+			background-color: #3b6ba5;
+			transform: rotate(45deg);
+			position: relative;
+			top: -12px;
+			left: 10px;
+			border-radius: 2px;
+			transition: 0.2s;
+		}
+		&:hover{
+			&:before{
+				height: 32px;
+			}
+			&:after{
+				height: 32px;
+
+			}
+		}
+	}
+	.itemSl{
+//		background: red;
+		position: relative;
+		&.active2{
+			&:after{
+				content: '';
+				width: 60px;
+				background-color: #3b6ba5;
+				height: 60px;
+				position: absolute;
+				bottom: -105px;
+				left: 40px;
+				z-index: 444 important;
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+@include breakpoint(mobileonly){
+	.action__timer{
+		display: none;
+	}
+	.title{
+	font-size: 30px;	
+	}
+	.subTitle{
+		span{
+		font-size: 20px;		
+		}
+	}
+}
+
+//=========================   REVIEWS AND  ===================================//
+
+//=========================   breakpoint  ===================================//
+
+@include breakpoint(phablet){
+	.action__timerMob{
+		display: none;
+	}
+	
+}
+
+@include breakpoint(laptop){
+	.action__timer{
+		display: block;
+	}
+	.action__timerMob{
+		display: none;
+	}
+}
+//=========================   breakpoint and  ===================================//
+
+
+
+
+
+
+
+
+
+
+
+
+
