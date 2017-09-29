@@ -1,0 +1,27 @@
+.wrapper
+	.slider__bus
+		.title
+			| НИКАКОГО ПОСРЕДНИЧЕСТВА  
+		.subTitle
+			span СОБСТВЕННЫЙ АВТОПАРК БОЛЕЕ 30 АВТОМОБИЛИ
+		.slider-wrap
+			.slider
+				-var n=0
+				while n <15
+					-n++
+						.itemSlider
+							.itemSlider__img
+								img(src='images/slide_1.png')
+							.car 
+								p 
+									span Автомобиль:
+									|Ваз-666, 20 мест 
+							.complect 
+								p
+									span Комплектация:
+									|Климат контроль, Комплектация: Климат контроль
+							.price 
+								p стоиьость 100500.руб
+			.slidePrev
+			.slideNext
+	

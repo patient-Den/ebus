@@ -1,0 +1,25 @@
+-var page = [{name:'name 1',status:'status',text:'казать предпочтительные языки для результатов поиска можно в разделе Настройки.'},{name:'name 2',status:'status',text:'казать предпочтительные языки для результатов поиска можно в разделе Настройки.'},{name:'name 3',status:'status',text:'казать предпочтительные языки для результатов поиска можно в разделе Настройки.'},{name:'name 4',status:'status',text:'казать предпочтительные языки для результатов поиска можно в разделе Настройки.'},{name:'name 5',status:'status',text:'казать предпочтительные языки для результатов поиска можно в разделе Настройки.'},{name:'name 6',status:'status',text:'казать предпочтительные языки для результатов поиска можно в разделе Настройки.'},{name:'name 7',status:'status',text:'казать предпочтительные языки для результатов поиска можно в разделе Настройки.'},{name:'name 8',status:'status',text:'казать предпочтительные языки для результатов поиска можно в разделе Настройки.'},{name:'name 9',status:'status',text:'казать предпочтительные языки для результатов поиска можно в разделе Настройки.'},{name:'name 10',status:'status',text:'казать предпочтительные языки для результатов поиска можно в разделе Настройки.'},{name:'name 11',status:'status',text:'казать предпочтительные языки для результатов поиска можно в разделе Настройки.'},{name:'name 12',status:'status',text:'казать предпочтительные языки для результатов поиска можно в разделе Настройки.'},]
+
+-var images = ['images/reviews-1.png','images/reviews-2.png','images/reviews-1.png','images/reviews-2.png','images/reviews-1.png','images/reviews-2.png','images/reviews-1.png','images/reviews-2.png','images/reviews-1.png','images/reviews-2.png','images/reviews-1.png','images/reviews-2.png',]
+.wrapper
+	.row
+		.reviews
+			.title ОТЗЫВЫ КЛИЕНТОВ
+			-var n=0
+			.revievWrap
+				.reviewsSlider
+					each item,index in images
+						.itemSl
+							.reviews__foto(data-trigger=index data-collection="1")
+								img(src=item)
+			.RevSlidePrev
+			.RevSlideNext
+			each i,index in page
+				.reviews__text(data-target=index data-collection="1")
+					.userName
+						p
+						|#[b #{i.name}] #{i.status}
+
+					.userText
+						p=i.text
+						
