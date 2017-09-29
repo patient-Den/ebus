@@ -3,6 +3,11 @@
 		font-size: 39px;
 	}
 	&__gallery{
+		a{
+			text-decoration: underline;
+			color: #3b6ba5;
+			font-weight: bold;
+		}
 		img{
 			margin-top: 55px;
 		}

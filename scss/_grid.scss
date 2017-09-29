@@ -141,3 +141,9 @@
     width:20%;
   }
 }
+.col-l-6x{
+  @include breakpoint(large){
+    float:left;
+    width:16.6%;
+  }
+}
